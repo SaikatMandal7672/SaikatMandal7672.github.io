@@ -1,111 +1,133 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    color: white;
-    /* box-sizing:content-box; */
-    font-family: 'gilroy';
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+    user-select: none;
 }
+
 html,
-body{
-    height: 100%;
+body {
     width: 100%;
+    height: 100%;
     overflow: hidden;
+    color: aliceblue;
 }
 
-#main{
-    height: 100%;
-    width: 100%;
-    background-color: #fb6f92;
-
-}
-#text{
-    white-space: nowrap;
-    font-size: 50px;
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-
-}
-#options{
-    font-size: 25px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+#main {
     display: flex;
-    gap:100px;
+    height: 100%;
+    width: 100%;
+    background-image: url(https://images.pexels.com/photos/1363876/pexels-photo-1363876.jpeg);
+    background-size: cover;
+    background-position: center;
 }
 
-a{
+nav {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    padding: 50px;
+    gap: 990px;
+    align-items: center;
+    z-index: 999;
+}
+
+nav #nav-right a {
     text-decoration: none;
+    color: whitesmoke;
+    margin-left: 20px;
+    transition: 0.2s;
 }
-#button1,#button2{
+
+nav #nav-right a:hover {
+    padding-bottom: 5px;
+    border-bottom: 2px solid white;
+}
+
+#left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.185);
+    gap: 60px;
+}
+
+.place {
+    padding-left: 50px;
+    width: 85%;
+}
+
+.place h4 {
+    white-space: nowrap;
+    display: inline-block;
+    font-weight: 500;
+    border-bottom: 1px solid white;
+    padding-bottom: 4px;
+    transition: 0.2s;
+}
+
+.place h6 {
+    padding-top: 2px;
+    font-weight: 100;
+    opacity: 0.65;
+}
+
+.place:hover {
+    font-size: 50px;
+}
+
+#right {
+
     position: relative;
-    width: 200px;
-    border: solid 2px white;
-    padding: 30px;
-    overflow: hidden;
-    
-}
-#button1::before{
-    
-    white-space: nowrap;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    position: absolute;
-    content: 'Yess';
-    transition: 0.3s;
-    
+    height: 100%;
+    width: 70%;
 }
 
-#button1::after{
-    white-space: nowrap;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+#right-text {
+    text-align: right;
     position: absolute;
-    content: 'Chup behen ki lodi ';
-    top:140%;
-    transition: 0.3s;
-}
-#button1:hover::before{
-    top: -50%;
-    cursor: pointer;
-}
-#button1:hover::after{
-    top: 50%;
-    cursor: pointer;
-}
-#button2::before{
-    
-    white-space: nowrap;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    position: absolute;
-    content: 'No';
-    transition: 0.3s;
-    
+    top: 40%;
+    right: 15%;
+    font-weight: 200;
 }
 
-#button2::after{
-    white-space: nowrap;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    position: absolute;
-    content: 'I Love You ,Bubu';
-    top:140%;
-    transition: 0.3s;
-}
-#button2:hover::before{
-    top: -50%;
-    cursor: pointer;
-}
-#button2:hover::after{
-    top: 50%;
-    cursor: pointer;
+#right-text h4 {
+    font-size: 20px;
+    padding-right: 33px;
 }
 
+#right-text h2 {
+    font-weight: 200;
+    font-size: 150px;
+}
+
+#input {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+
+#right-text input {
+    font-size: 20px;
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    outline: none;
+}
+
+input::placeholder {
+    color: white;
+}
+
+#input i {
+    font-size: 20px;
+}
+@media(max-width:500px){
+    
+}
