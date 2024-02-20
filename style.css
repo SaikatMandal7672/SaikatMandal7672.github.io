@@ -1,133 +1,89 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Gilroy';
-    user-select: none;
-}
-
-html,
 body {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: gilroy;
+
+  background: linear-gradient(rgb(0, 249, 236), rgb(71, 150, 229));
 }
 
-#main {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    background-image: url(https://images.pexels.com/photos/1363876/pexels-photo-1363876.jpeg);
-    background-size: cover;
-    background-position: center;
+#noButton {
+  position: absolute;
+  margin-left: 150px;
+  transition: 0.5s;
+  margin-top: 30px;
 }
 
-nav {
-    width: 100%;
-    position: absolute;
-    display: flex;
-    padding: 50px;
-    gap: 990px;
-    align-items: center;
-    z-index: 999;
+#yesButton {
+  position: absolute;
+  margin-right: 150px;
+  margin-top: 30px;
 }
 
-nav #nav-right a {
-    text-decoration: none;
-    color: whitesmoke;
-    margin-left: 20px;
-    transition: 0.2s;
+.header_text {
+  /* font-family: "Nunito"; */
+  font-size: 50px;
+  font-weight: bold;
+
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #ffffff;
 }
 
-nav #nav-right a:hover {
-    padding-bottom: 5px;
-    border-bottom: 2px solid white;
+.text {
+  /* font-family: "Nunito"; */
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 0px;
 }
 
-#left {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 30%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.185);
-    gap: 60px;
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
-.place {
-    padding-left: 50px;
-    width: 85%;
+.btn {
+  background-color: #017cff;
+  color: white;
+  font-weight: 600;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 3px 3px black;
 }
 
-.place h4 {
-    white-space: nowrap;
-    display: inline-block;
-    font-weight: 500;
-    border-bottom: 1px solid white;
-    padding-bottom: 4px;
-    transition: 0.2s;
+.btn:hover {
+  background-color: #ffffff;
+  color: #017cff;
 }
 
-.place h6 {
-    padding-top: 2px;
-    font-weight: 100;
-    opacity: 0.65;
+.gif_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.place:hover {
-    font-size: 50px;
+p {
+  color: white;
+  margin-left: 50%;
 }
-
-#right {
-
-    position: relative;
-    height: 100%;
-    width: 70%;
-}
-
-#right-text {
-    text-align: right;
-    position: absolute;
-    top: 40%;
-    right: 15%;
-    font-weight: 200;
-}
-
-#right-text h4 {
-    font-size: 20px;
-    padding-right: 33px;
-}
-
-#right-text h2 {
-    font-weight: 200;
-    font-size: 150px;
-}
-
-#input {
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid white;
-}
-
-#right-text input {
-    font-size: 20px;
-    width: 100%;
-    padding: 10px;
-    background-color: transparent;
-    border: none;
-    color: white;
-    outline: none;
-}
-
-input::placeholder {
-    color: white;
-}
-
-#input i {
-    font-size: 20px;
-}
-@media(max-width:500px){
-    
+p a {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 600;
+  opacity: 0.25;
 }
