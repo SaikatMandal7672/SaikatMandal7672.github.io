@@ -1,51 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div>
-        <h1 class="header_text">Can we get back together ?</h1>
-      </div>
-      
-    
-      <div class="gif_container">
-        <img
-          src="https://i.postimg.cc/pdNqPxx1/milk-and-mocha-cute.gif"
-          alt="Cute animated illustration"
-        />
-      </div>
-      <div class="buttons">
-        <button class="btn" id="yesButton" onclick="nextPage()">Yes</button>
-        <button
-          class="btn"
-          id="noButton"
-          onmouseover="moveButton()"
-          onclick="moveButton()"
-        >
-          No
-        </button>
 
-        <script>
-          function nextPage() {
-            window.location.href = "yes.html";
-          }
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-          function moveButton() {
-            var x =
-              Math.random() *
-              (window.innerWidth -
-                document.getElementById("noButton").offsetWidth);
-            var y =
-              Math.random() *
-              (window.innerHeight -
-                document.getElementById("noButton").offsetHeight);
-            document.getElementById("noButton").style.left = `${x}px`;
-            document.getElementById("noButton").style.top = `${y}px`;
-          }
-        </script>
-      </div>
-    </div>
-  </body>
+    <body>
+        <div id="main">
+
+            <div id="left">
+
+                <div id="text">
+                    <h1 class="a"><span>Nike</span> AirPerformax</h1>
+                    <h2 class="a">Air Max Series</h2>
+                    <p class="a">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, corporis optio
+                        earum
+                        voluptas veniam aspernatur cumque dolorem nihil blanditiis minus porro maiores dolorum labore
+                        voluptatibus nostrum quibusdam iste eos sunt.</p>
+                    <button class="a">Check Out </button>
+                </div>
+                <div id="btm" class="a">
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, reprehenderit soluta cum velit
+                        quibusdam
+                    </p>
+                </div>
+            </div>
+            <div id="right">
+                <img id="shoes" src="nike_air_max-removebg-preview (3).png" alt=" nike AIR MAX 90">
+                <div class="a" id="centre">
+                    <h1 class="a"><span>Adidas</span> BehenKaLauda</h1>
+                    <h2 class="a"><span>Exclusively made for</span> India </h2>
+                    <p class="a"> adidas ki maa ki chut Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+                        reiciendis
+                        nobis animi enim aliquid iure odit atque nisi labore neque.</p>
+
+                    <div class="a" id="btns">
+                        <button>360° view</button>
+                        <button>Add to cart</button>
+                    </div>
+                    <h3 class="a">Sample images</h3>
+                    <div class="a" id="sample">
+
+                        <div class="samples">
+                            <img src="6604652f820956257a37eedc-nike-mens-sneaker.jpg" alt="">
+                        </div>
+                        <div class="samples">
+                            <img src="6604652f820956257a37eedb-nike-mens-sneaker.jpg" alt="">
+                        </div>
+                        <div class="samples">
+                            <img src="6539033f5a0f10754f0266da-nike-men-39-s-race-running-shoe.jpg" alt="">
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+            integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="script.js"></script>
+    </body>
+
 </html>

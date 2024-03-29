@@ -1,89 +1,180 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  font-family: gilroy;
-
-  background: linear-gradient(rgb(0, 249, 236), rgb(71, 150, 229));
+    height: 100%;
+    width: 100%;
 }
 
-#noButton {
-  position: absolute;
-  margin-left: 150px;
-  transition: 0.5s;
-  margin-top: 30px;
+#main {
+    height: 100%;
+    width: 100%;
+    display: flex;
 }
 
-#yesButton {
-  position: absolute;
-  margin-right: 150px;
-  margin-top: 30px;
+#left {
+    position: relative;
+    color: rgb(255, 255, 255);
+    height: 100%;
+    width: 35%;
+    background-color: rgb(188, 82, 82);
 }
 
-.header_text {
-  /* font-family: "Nunito"; */
-  font-size: 50px;
-  font-weight: bold;
-
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  color: #ffffff;
+#left #text {
+    width: 80%;
+    position: absolute;
+    top: 20%;
+    left: 10%;
 }
 
-.text {
-  /* font-family: "Nunito"; */
-  font-size: 25px;
-  font-weight: bold;
-  color: white;
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 0px;
+#left #text h1 {
+    font-size: 58px;
+    line-height: 1;
 }
 
-.buttons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-  margin-left: 20px;
+#left #text h1 span {
+    font-weight: 200;
 }
 
-.btn {
-  background-color: #017cff;
-  color: white;
-  font-weight: 600;
-  padding: 15px 32px;
-  text-align: center;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border: none;
-  border-radius: 12px;
-  transition: background-color 0.3s ease;
-  box-shadow: 0 3px 3px black;
+#left #text h2 {
+    margin-top: 7px;
+    line-height: 1.5;
+    font-size: 25px;
+    font-weight: 200;
 }
 
-.btn:hover {
-  background-color: #ffffff;
-  color: #017cff;
+#left #text p {
+    font-size: 17px;
+    width: 70%;
+    margin-top: 20px;
+    line-height: 1.4;
+    opacity: .8;
 }
 
-.gif_container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#left #text button {
+    color: rgb(177, 64, 64);
+    font-size: 17px;
+    font-weight: 700;
+    margin-top: 20px;
+    padding: 7px 20px;
+    border: none;
+
 }
-p {
-  color: white;
-  margin-left: 50%;
+
+#left #btm {
+    padding: 10px 20px;
+    font-size: 14px;
+    position: absolute;
+    width: 80%;
+    color: rgb(156, 53, 53);
+    background-color: white;
+    bottom: 10px;
+    left: 10%;
+    border-radius: 5px;
 }
-p a {
-  color: rgb(255, 255, 255);
-  font-size: 20px;
-  font-weight: 600;
-  opacity: 0.25;
+
+#left #btm p {
+    color: black;
+    opacity: 0.7;
+}
+
+#right {
+    position: relative;
+    height: 100%;
+    width: 65%;
+    background-color: rgb(231, 241, 250);
+}
+
+#right>img {
+    position: absolute;
+    top: 50%;
+    left: -5%;
+    transform: translate(-50%, -50%) rotate(-30deg);
+}
+
+#right #centre {
+    position: relative;
+    position: absolute;
+    width: 70%;
+    top: 20%;
+    left: 27%;
+}
+
+#right #centre h1 {
+    font-size: 55px;
+    color: rgb(236, 85, 85);
+    margin-bottom: 15px;
+}
+
+#right #centre h1 span {
+    color: rgba(0, 0, 0, 0.685);
+    font-weight: 200;
+}
+
+#centre h2 {
+    margin-bottom: 15px;
+}
+
+#right #centre h2 span {
+    font-weight: 200;
+}
+
+#right #centre p {
+    width: 70%;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+#right #btns {
+    margin-top: 20px;
+    display: flex;
+    gap: 50px;
+
+}
+
+#right #btns button {
+    font-size: 16px;
+    background-color: rgb(240, 230, 230);
+    border: none;
+    font-weight: 700;
+    padding: 6px 20px;
+    border-radius: 2px;
+}
+
+#right #btns button:nth-child(1) {
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+#right #btns button:nth-child(2) {
+    border-radius: 50px;
+    color: white;
+    background-color: rgb(232, 91, 91);
+
+}
+
+#sample {
+    display: flex;
+    gap: 19px;
+}
+
+#centre>h3 {
+    margin-top: 20px;
+}
+
+.samples {
+
+    margin-top: 20px;
+    /* background-color: red; */
+
+    width: 120px;
+}
+
+.samples img {
+    width: 100%;
 }
